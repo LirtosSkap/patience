@@ -18,5 +18,8 @@ Route::get('/test', function () {
 //
 //Route::resource('tasks', 'TaskController');
 
-Route::get('/', 'ApiController@home');
-Route::resource('/api','ApiController');
+//Route::get('/', 'ApiController@home');
+//Route::resource('/api','ApiController');
+
+Route::get('/', 'SignaturesController@index')->name('home');
+Route::get('sign', 'SignaturesController@create')->name('sign');

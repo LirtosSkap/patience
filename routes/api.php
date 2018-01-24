@@ -43,3 +43,9 @@ use Illuminate\Http\Request;
 //        return App\Task::destroy($id);
 //    });
 //});
+
+
+Route::resource('signatures', 'Api\SignatureController')
+    ->only(['index', 'store', 'show']);
+
+Route::put('signatures/{signature}/report', 'Api\ReportSignature@update');

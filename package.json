@@ -21,6 +21,7 @@
     "dependencies": {
         "bootstrap": "^4.0.0",
         "vue-axios": "^2.0.2",
-        "vue-router": "^3.0.1"
+        "vue-router": "^3.0.1",
+        "vuejs-paginate": "^1.6.0"
     }
 }
